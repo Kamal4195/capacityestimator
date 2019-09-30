@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Capacity Estimator</title>
+
+  <meta name="description" content="Client Side App">
+  <meta name="author" content="Kamal Reddy">
+
+  <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+
+  <!-- required for sticky footer -->
+  <style>
+    body,
+    .sticky-footer-wrapper {
+      min-height: 100vh;
+    }
+  </style>
+
+</head>
+
+<body class="d-flex flex-column sticky-footer-wrapper">
+  <!-- Bootstrap container or container-fluid (whole width) -->
+  <!-- https://getbootstrap.com/docs/4.0/layout/overview/ -->
+  <!-- margin top 5 ($spacer * 3) -->
+  <main class="container mt-5 flex-fill">
+
+    <!--Container has rows - first row -->
+    <div class="row">
+
+      <!--Rows have columns - column 1 (7/12) -->
+      <div class="col-md-7 mb-4">
+
+        <h2>Capacity Estimator App</h2>
+        <hr>
+
+        
+
+        <fieldset class="mt-4">
+          <label for="firststring">Enter Number Of Students:</label>
+          <input id="firststring" type="text" min="1" max="100" >
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <button id="addButton" class="btn btn-primary" onclick=calculate()>click</button>
+        <p id="result"></p>
+      
+
+  </main>
+
+  <!-- sticky footer with padding on y-axis (top and bottom) -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Right-click / Inspect / Console</span>
+      &#9670;
+      <a href="https://github.com/KaranamVijayKumar/biggest-string">Demo</a>
+      &#9670;
+      <a href="https://karanamvijaykumar.github.io/biggest-string/">Source</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+  <script src="biggest.js"></script>
+
+</body>
+
+</html>
