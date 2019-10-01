@@ -1,6 +1,9 @@
 function calculate() {
     let a =parseInt(document.getElementById("Number").value);
-    let total=a+2;
+    let total=calculatepeople(a);
     document.getElementById("result").innerHTML ="People per course:" +total;
+  }
+  function calculatepeople(n){
+    return n+2;
   }
   
